@@ -60,7 +60,7 @@ def send_request(url):
     except Exception as e:
         with lock:
             errors += 1
-        logger.error(f"Request failed: {e}")
+        print(f"Request failed: {e}")
         
 
 
